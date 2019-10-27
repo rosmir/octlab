@@ -1,0 +1,33 @@
+CMPLRNAME = VS2008
+VALID_CFG = 1
+DOPARSING = 1
+OPT_LEVEL = 2
+WARNLEVEL = 3
+USERFLAGS = /fp:fast /favor:INTEL64 /MT
+OBJFORMAT = Msvc
+COMPFLAGS = /c /X /u /GS-
+COMPLPATH = C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\amd64\cl.exe
+ENV_BATCH = C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\amd64\vcvarsamd64.bat
+ENV_OPTNS = 
+OBJ_TEMPL = /Fo$OBJECT
+SRC_TEMPL = $SOURCE
+DEF_TEMPL = /D$MACRO
+DEFVTEMPL = /D$MACRO=$VALUE
+INC_TEMPL = /I$PATH
+OPT_FLAGS
+No Optimizations = /Od
+Optimize for Space = /O1 /Oi-
+Optimize for Speed = /O2 /Oi-
+END_FLAGS
+WARNFLAGS
+Disable Warnings = /w
+Minimal Warnings = /W1
+More Warnings = /W2
+Many Warnings = /W3
+Aggressive Warnings = /W4
+END_FLAGS
+PATH_HINT = HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VC7\9.0;.\bin
+PATH_HINT = HKLM\SOFTWARE\Microsoft\VisualStudio\SxS\VC7\9.0;..\Common7\Tools
+PATH_HINT = HKLM\SOFTWARE\Microsoft\VisualStudio\9.0\Installdir;..\..\VC\bin
+PATH_HINT = HKLM\SOFTWARE\Microsoft\VisualStudio\9.0\Installdir;..\Tools
+__CEND___

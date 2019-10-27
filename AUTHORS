@@ -1,0 +1,7 @@
+The primary authors and committers of OCTLab are:
+
+  Stepan A. Baranov (stepan@baranov.su) - overall design, project lead
+
+Big parts of the code are taken from the works of:
+
+  Brian Bradie (bbradie@cnu.edu) - cubic spline interpolation

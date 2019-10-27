@@ -1,0 +1,89 @@
+//
+// $Id: OCTLib.rc 2 2010-01-05 03:34:41Z rosmir $
+// Copyright (C) 2010 Stepan A. Baranov (stepan@baranov.su)
+// All rights reserved.
+// web-site: www.OCTLab.org
+//
+// Use of this source code is governed by a Clear BSD-style license that can be
+// found on the https://github.com/rosmir/octlab/blob/master/LICENSE web-page or
+// in the COPYRIGHT.TXT file
+//
+
+// http://msdn.microsoft.com/en-us/library/aa381058(VS.85).aspx
+
+#include "ver.h"
+#define APSTUDIO_READONLY_SYMBOLS
+#include "afxres.h"
+#undef APSTUDIO_READONLY_SYMBOLS
+
+//////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+//////////////////////////////////////////////////////////////////////
+// Version
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    OCTLIB_VER
+ PRODUCTVERSION OCTLIB_VER
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+ FILEFLAGS      VS_FF_DEBUG
+#else
+ // final version
+ FILEFLAGS      0x0L
+#endif
+#ifdef WIN32
+ FILEOS         VOS_NT|VOS__WINDOWS32
+#else
+ FILEOS         VOS_NT
+#endif
+ FILETYPE       VFT_DLL
+ FILESUBTYPE    VFT2_UNKNOWN // not used
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        //  Lang=US English, CharSet=Windows Multilingual
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileDescription",    "OCTLab Library for OCT and speckle analysis\0"
+            VALUE "LegalCopyright",     "(C) 2010 Stepan A. Baranov\0"
+            VALUE "LegalTrademarks",    "http://www.OCTLab.org/\0"
+            VALUE "OriginalFilename",   OCTLIB_DLL_STRING
+            VALUE "ProductName",        "OCTLab\0"
+            VALUE "ProductVersion",     OCTLIB_VER_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+//////////////////////////////////////////////////////////////////////
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////
+// TEXTINCLUDE
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""ver.h""\r\n"
+    "\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+//////////////////////////////////////////////////////////////////////
