@@ -1,4 +1,4 @@
-Copyright (c) 2014 Stepan A. Baranov (stepan@baranov.su)
+Copyright (c) 2009, 2010, 2019 Stepan A. Baranov (stepan@baranov.us)
 All rights reserved.
 web-site: www.OCTLab.org
 
@@ -30,4 +30,4 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 The original template of "Clear BSD" license is available at
-http://labs.metacarta.com/license-explanation.html
+https://spdx.org/licenses/BSD-3-Clause-Clear.html
