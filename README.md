@@ -3,6 +3,7 @@ octlab
 C++ and LabView solution for Optical Coherence Tomography
 
 MESSAGE ABOUT PROJECT STATUS
+
 Hi All,
 
 The OCTLAB project was started while I was a post-doctoral 
@@ -17,4 +18,5 @@ previous code under the terms of the Clear BSD license!
 
 ---
 SY, Stepan A. Baranov, PhD
+
 email: stepan@baranov.us
